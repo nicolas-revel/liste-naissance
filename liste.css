@@ -1,3 +1,5 @@
+/* Mise en forme commune du body pour les deux documents */
+
 @font-face {
   font-family: Futura;
   src: url(font/FuturaHandwritten.ttf);
@@ -11,6 +13,9 @@ body {
   background-image: url(img/background.jpg);
   background-repeat: no-repeat;
 }
+
+/* Mise en forme commune du header pour les deux documents */
+
 header {
   /* background-color: rgb(228, 89, 89); */
   display: flex;
@@ -43,6 +48,8 @@ header li {
   font-size: 16pt;
   width: 85%;
 }
+
+/* Mise en forme de la table pour la liste */
 
 table {
   width: 90%;
@@ -96,8 +103,34 @@ table th {
 }
 
 td img {
-  height: 35%;
+  height: 40%;
+  z-index: -1;
 }
+
+/* Mise en forme des conditions des réservations des différents produits */
+
+.urgent:hover {
+  background-color: #b36d7894;
+  transition: 500ms;
+}
+
+.normal:hover {
+  background-color: #5bb36c94;
+  transition: 500ms;
+}
+
+.selectionne:hover {
+  background-color: #4d4d4d;
+  transition: 500ms;
+}
+
+.achete:hover {
+  background-image: url(img/panier-croix.png);
+  background-repeat: no-repeat;
+  background-size: 30%;
+}
+
+/* Mise en forme commune du footer pour les deux documents */
 
 footer {
   display: flex;
@@ -124,4 +157,168 @@ footer a {
   background-color: #b5ffc4;
   padding: 5px;
   border-radius: 5px;
+}
+
+/* Mise en forme de la page de formulaire */
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  margin-bottom: 100px;
+}
+
+.nomprenom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 16pt;
+  width: 70%;
+  margin: 20px;
+  flex-wrap: wrap;
+}
+
+#lastnameinput,
+#firstnameinput {
+  border-style: none;
+  border-radius: 5px;
+  border-bottom: #5bc470 solid;
+  background-color: #b5ffc4;
+  font-size: 14pt;
+}
+
+#lastnameinput:focus,
+#firstnameinput:focus {
+  outline: none;
+}
+
+#anonimisation {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 10px 0;
+  font-size: 16pt;
+}
+
+form > h2 {
+  font-size: 26pt;
+  color: #52c569;
+  text-align: center;
+}
+
+/* Mise en forme du choix des cadeaux */
+
+#choix_cadeaux {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 95%;
+}
+
+.categorie_cadeaux {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14pt;
+  max-width: 18%;
+  min-width: 12%;
+  max-height: 45%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.categorie_cadeaux:hover {
+  background-color: #6fe186;
+  transition: 500ms;
+}
+
+.categorie_cadeaux > p {
+  font-size: 18pt;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.categorie_cadeaux > div {
+  margin: 5px 0px;
+}
+
+/* Mise en forme votre message */
+
+#votre_message {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-betweens;
+  width: 70%;
+  margin: 10px;
+}
+
+#votre_message > label {
+  font-size: 16pt;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#votre_message > textarea {
+  background-color: #b5ffc4;
+  font-family: Futura;
+  font-size: 14pt;
+  resize: none;
+  border-radius: 5px;
+}
+
+#votre_message > textarea:focus {
+  outline: thin;
+}
+
+/* Mise en forme votre email */
+
+#votre_mail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 10px;
+}
+
+#votre_mail > label {
+  font-size: 16pt;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#votre_mail > input {
+  border-style: none;
+  border-radius: 5px;
+  border-bottom: #5bc470 solid;
+  background-color: #b5ffc4;
+  margin-bottom: 10px;
+  font-size: 14pt;
+  width: 300px;
+}
+
+#votre_mail > input:focus {
+  outline: none;
+}
+
+/* Mise en forme du bouton envoyer */
+
+#submit_buton > input {
+  width: 150px;
+  height: 30px;
+  font-family: Futura;
+  font-size: 14pt;
+  background-color: #fd687e;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #a12134;
+}
+
+#submit_buton > input:focus {
+  outline-color: #7e1b2a;
 }

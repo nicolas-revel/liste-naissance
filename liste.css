@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Futura;
+  src: url(font/FuturaHandwritten.ttf);
+}
+body {
+  font-family: Futura;
+  margin: 0;
+}
+header {
+  /* background-color: rgb(228, 89, 89); */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 42pt;
+  margin: 1%;
+  text-align: center;
+}
+
+header p {
+  font-size: 22pt;
+  text-align: center;
+  width: 85%;
+  margin: 0% 1%;
+}
+
+header ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header li {
+  font-size: 16pt;
+  width: 85%;
+}
+
+table {
+  width: 90%;
+  margin: 5%;
+  border-collapse: collapse;
+  border-style: solid;
+}
+
+table th {
+  font-size: 16pt;
+  border-collapse: collapse;
+  border-style: solid;
+}
+
+.categorie {
+  width: 20%;
+}

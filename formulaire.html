@@ -14,7 +14,103 @@
       </p>
     </header>
     <main>
-      <form action=""></form>
+      <form action="formulaire.html">
+        <div>
+          <label for="lastnameinput">Nom</label>
+          <input type="text" name="lastname" id="lastnameinput" />
+        </div>
+        <div>
+          <label for="firstnameinput">Prénom</label>
+          <input type="text" name="firstname" id="firstnameinput" />
+        </div>
+        <div>
+          <label>Je souhaite faire mon cadeau de manière anonyme</label>
+          <div>
+            <input type="radio" name="choix_anonyme" id="anonyme" />
+            <label for="anonyme">Oui</label>
+            <input type="radio" name="choix_anonyme" id="non_anonyme" checked />
+            <label for="non_anonyme">Non</label>
+          </div>
+        </div>
+        <h2>Quel cadeau souhaitez-vous offrir à Manon ?</h2>
+        <fieldset>
+          <div>
+            <p>Vie pratique</p>
+            <input type="checkbox" name="porte-bebe" id="porte-bebe" />
+            <label for="porte-bebe">Porte bébé</label>
+            <input type="checkbox" name="poussette" id="poussette" />
+            <label for="poussette">Poussette</label>
+          </div>
+          <div>
+            <p>Eveil</p>
+            <input type="checkbox" name="hochet" id="hochet" />
+            <label for="hochet">Hochet</label>
+            <input type="checkbox" name="veilleuse" id="veilleuse" />
+            <label for="veilleuse">Veilleuse</label>
+            <input type="checkbox" name="mobile" id="mobile" />
+            <label for="mobile">Mobile</label>
+          </div>
+          <div>
+            <p>Alimentation</p>
+            <input type="checkbox" name="biberon" id="biberon" />
+            <label for="biberon">Biberons</label>
+            <input type="checkbox" name="prep_biberon" id="prep_biberon" />
+            <label for="prep_biberon">Préparateur de biberons</label>
+          </div>
+          <div>
+            <p>Chambre</p>
+            <input type="checkbox" name="lit" id="lit" />
+            <label for="lit">Lit à barreaux</label>
+            <input type="checkbox" name="draps" id="draps" />
+            <label for="draps">Set de draps</label>
+            <input type="checkbox" name="couverture" id="couverture" />
+            <label for="couverture">Couverture</label>
+          </div>
+          <div>
+            <p>Toilette</p>
+            <input type="checkbox" name="sortiedb" id="sortiedb" />
+            <label for="sortiedb">Sortie de bain</label>
+            <input type="checkbox" name="trousse" id="trousse" />
+            <label for="trousse">Trousse de toilette</label>
+            <input type="checkbox" name="thermo" id="thermo" />
+            <label for="thermo">Thermomètre</label>
+            <input type="checkbox" name="table_langer" id="table_langer" />
+            <label for="table_langer">Table à langer</label>
+            <input type="checkbox" name="matelat_langer" id="matelat_langer" />
+            <label for="matelat_langer">Matelat de table à langer</label>
+          </div>
+          <div>
+            <p>Habillage et accessoire</p>
+            <input type="checkbox" name="bodies" id="bodies" />
+            <label for="bodies">Bodies</label>
+            <input type="checkbox" name="pyjamas" id="pyjamas" />
+            <label for="pyjamas">Pyjamas</label>
+            <input type="checkbox" name="chaussettes" id="chaussettes" />
+            <label for="chaussettes">Chaussettes</label>
+            <input type="checkbox" name="bavoirs" id="bavoirs" />
+            <label for="bavoirs">Bavoirs</label>
+          </div>
+        </fieldset>
+        <div>
+          <label for="message">Votre message</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="60"
+            rows="8"
+            placeholder="Souhaitez-vous laisser un petit message pour Manon ?"
+          ></textarea>
+        </div>
+        <div>
+          <label for="usermail">Votre adresse mail</label>
+          <input
+            type="email"
+            name="mail"
+            id="usermail"
+            placeholder="example@mail.com"
+          />
+        </div>
+      </form>
     </main>
     <footer>
       <p>Retourner à la liste de naissance :</p>
